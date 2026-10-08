@@ -1,0 +1,788 @@
+.neo-app {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 30px 20px 80px;
+}
+
+/* =========================================================================
+   1. TOP NAVIGATION BAR (NEOBRUTALIST HEADER)
+   ========================================================================= */
+.neo-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #FFFFFF;
+  border: 3.5px solid #000000;
+  box-shadow: 6px 6px 0px #000000;
+  border-radius: 0px;
+  padding: 14px 24px;
+  margin-bottom: 28px;
+}
+
+.neo-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.neo-brand-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: var(--color-orange);
+  border: 3px solid #000000;
+  box-shadow: 3px 3px 0px #000000;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.neo-brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.neo-title {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: #000000;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+.neo-tagline {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 2px;
+}
+
+.neo-nav-badges {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.neo-stamp-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--color-lime);
+  border: 2.5px solid #000000;
+  box-shadow: 3px 3px 0px #000000;
+  padding: 6px 14px;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  transform: rotate(-1deg);
+}
+
+.neo-pulse-dot {
+  width: 9px;
+  height: 9px;
+  background: #000000;
+  border-radius: 50%;
+}
+
+.neo-lang-btn {
+  background: var(--color-yellow);
+  border: 2.5px solid #000000;
+  box-shadow: 3px 3px 0px #000000;
+  padding: 6px 12px;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+/* =========================================================================
+   2. HERO POSTER (COMIC / NEOBRUTALIST BILLBOARD)
+   ========================================================================= */
+.neo-hero {
+  position: relative;
+  background: #FFFFFF;
+  border: 3.5px solid #000000;
+  box-shadow: 8px 8px 0px #000000;
+  padding: 36px 40px;
+  margin-bottom: 32px;
+}
+
+.neo-hero-sticker {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--color-pink);
+  color: #FFFFFF;
+  border: 2.5px solid #000000;
+  box-shadow: 3px 3px 0px #000000;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 5px 14px;
+  transform: rotate(-1.5deg);
+  margin-bottom: 16px;
+}
+
+.neo-hero-heading {
+  font-family: var(--font-display);
+  font-size: 2.85rem;
+  font-weight: 900;
+  color: #000000;
+  line-height: 1.1;
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+  margin-bottom: 16px;
+}
+
+.neo-hero-heading span.highlight {
+  background: var(--color-yellow);
+  padding: 0 8px;
+  border: 2.5px solid #000000;
+  box-shadow: 3px 3px 0px #000000;
+  display: inline-block;
+}
+
+.neo-hero-desc {
+  font-size: 1.15rem;
+  color: #1A1A1A;
+  max-width: 900px;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+/* =========================================================================
+   3. TABS (COMIC STRIP SELECTORS)
+   ========================================================================= */
+.neo-tabs-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.neo-tab-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  background: #FFFFFF;
+  border: 3px solid #000000;
+  box-shadow: 4px 4px 0px #000000;
+  padding: 10px 22px;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  color: #000000;
+}
+
+.neo-tab-button.active {
+  background: var(--color-orange);
+  color: #FFFFFF;
+  box-shadow: 6px 6px 0px #000000;
+  transform: translate(-2px, -2px);
+}
+
+/* =========================================================================
+   4. SAMPLE CASES CAROUSEL (SCRAPBOOK PANELS)
+   ========================================================================= */
+.neo-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.neo-section-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  background: var(--color-yellow);
+  border: 2px solid #000000;
+  box-shadow: 3px 3px 0px #000000;
+  padding: 4px 12px;
+}
+
+.neo-sample-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
+  margin-bottom: 30px;
+}
+
+.neo-sample-card {
+  background: #FFFFFF;
+  border: 3px solid #000000;
+  box-shadow: 5px 5px 0px #000000;
+  padding: 18px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.neo-sample-card.selected {
+  background: #FFFBEB;
+  border-color: #000000;
+  transform: translate(-3px, -3px);
+  box-shadow: 8px 8px 0px #000000;
+}
+
+.neo-sample-card.selected::before {
+  content: "★ SELECTED";
+  position: absolute;
+  top: -12px;
+  right: 14px;
+  background: var(--color-pink);
+  color: #FFFFFF;
+  border: 2px solid #000000;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  box-shadow: 2px 2px 0px #000000;
+}
+
+.neo-card-pill {
+  display: inline-block;
+  background: var(--color-cyan);
+  border: 2px solid #000000;
+  box-shadow: 2px 2px 0px #000000;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  align-self: flex-start;
+}
+
+.neo-sample-title {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #000000;
+  line-height: 1.35;
+  margin-bottom: 6px;
+}
+
+.neo-sample-desc {
+  font-size: 0.82rem;
+  color: #333333;
+  line-height: 1.45;
+  margin-top: auto;
+}
+
+/* =========================================================================
+   5. INPUT DOSSIER CARD
+   ========================================================================= */
+.neo-input-panel {
+  background: #FFFFFF;
+  border: 3.5px solid #000000;
+  box-shadow: 7px 7px 0px #000000;
+  padding: 26px;
+  margin-bottom: 30px;
+}
+
+.neo-input-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.neo-input-label {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.neo-textarea {
+  width: 100%;
+  min-height: 160px;
+  padding: 16px;
+  border: 3px solid #000000;
+  box-shadow: 4px 4px 0px #000000;
+  background: #FAFAFA;
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #000000;
+  resize: vertical;
+  margin-bottom: 20px;
+}
+
+.neo-textarea:focus {
+  outline: none;
+  background: #FFFFFF;
+  box-shadow: 6px 6px 0px #000000;
+}
+
+.neo-action-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.neo-controls-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.neo-select-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.neo-select {
+  padding: 8px 12px;
+  border: 2.5px solid #000000;
+  box-shadow: 3px 3px 0px #000000;
+  background: #FFFFFF;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #000000;
+}
+
+.neo-checkbox-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  background: #F4F4F5;
+  border: 2px solid #000000;
+  padding: 6px 12px;
+  box-shadow: 2px 2px 0px #000000;
+}
+
+.neo-btn-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--color-orange);
+  color: #FFFFFF;
+  padding: 12px 26px;
+  font-size: 1.05rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 3px solid #000000;
+  box-shadow: 5px 5px 0px #000000;
+}
+
+/* =========================================================================
+   6. CASE DOSSIER & VERDICT BREAKDOWN (SCRAPBOOK COURT DOSSIER)
+   ========================================================================= */
+.neo-dossier-card {
+  background: #FFFFFF;
+  border: 3.5px solid #000000;
+  box-shadow: 8px 8px 0px #000000;
+  padding: 32px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.neo-dossier-stamp {
+  position: absolute;
+  top: 24px;
+  right: 28px;
+  border: 3.5px dashed #000000;
+  padding: 6px 14px;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+  transform: rotate(3deg);
+  background: var(--color-yellow);
+}
+
+.neo-dossier-court {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--color-blue);
+  color: #FFFFFF;
+  border: 2.5px solid #000000;
+  box-shadow: 3px 3px 0px #000000;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  margin-bottom: 12px;
+}
+
+.neo-dossier-headline {
+  font-family: var(--font-display);
+  font-size: 1.85rem;
+  font-weight: 900;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+  max-width: 85%;
+}
+
+.neo-speech-bubble {
+  position: relative;
+  background: var(--color-yellow);
+  border: 3px solid #000000;
+  box-shadow: 5px 5px 0px #000000;
+  padding: 16px 20px;
+  margin-bottom: 22px;
+}
+
+.neo-speech-tag {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: #000000;
+  color: #FFFFFF;
+  padding: 2px 8px;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+.neo-speech-text {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #000000;
+  line-height: 1.5;
+}
+
+.neo-verdict-banner {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--color-lime);
+  border: 3px solid #000000;
+  box-shadow: 4px 4px 0px #000000;
+  padding: 8px 18px;
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+  transform: rotate(-0.5deg);
+}
+
+.neo-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.neo-fact-tile {
+  background: #FAFAFA;
+  border: 2.5px solid #000000;
+  box-shadow: 4px 4px 0px #000000;
+  padding: 14px 16px;
+}
+
+.neo-fact-label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #555555;
+  margin-bottom: 4px;
+}
+
+.neo-fact-data {
+  font-family: var(--font-display);
+  font-size: 0.98rem;
+  font-weight: 800;
+  color: #000000;
+  line-height: 1.35;
+}
+
+.neo-badges-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  border-top: 3px solid #000000;
+  padding-top: 16px;
+}
+
+.neo-meta-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #FFFFFF;
+  border: 2px solid #000000;
+  box-shadow: 2px 2px 0px #000000;
+  padding: 4px 10px;
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* =========================================================================
+   7. CATEGORY FILTER CHIPS
+   ========================================================================= */
+.neo-filters-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.neo-filter-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #FFFFFF;
+  border: 2.5px solid #000000;
+  box-shadow: 3px 3px 0px #000000;
+  padding: 6px 14px;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.neo-filter-chip.active {
+  background: #000000;
+  color: #FFFFFF;
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0px var(--color-orange);
+}
+
+.neo-filter-count {
+  background: var(--color-yellow);
+  color: #000000;
+  border: 1.5px solid #000000;
+  font-size: 0.72rem;
+  font-weight: 900;
+  padding: 1px 6px;
+}
+
+.neo-filter-chip.active .neo-filter-count {
+  background: var(--color-orange);
+  color: #FFFFFF;
+}
+
+/* =========================================================================
+   8. ANNOTATED JUDGMENT READER (COMIC CASE EVIDENCE)
+   ========================================================================= */
+.neo-reader-panel {
+  background: #FFFFFF;
+  border: 3.5px solid #000000;
+  box-shadow: 8px 8px 0px #000000;
+  padding: 30px 34px;
+  margin-bottom: 30px;
+}
+
+.neo-reader-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #000000;
+  padding-bottom: 14px;
+  margin-bottom: 20px;
+}
+
+.neo-reader-title {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.neo-legal-text-flow {
+  font-family: 'Public Sans', sans-serif;
+  font-size: 1.12rem;
+  line-height: 2.4;
+  color: #000000;
+}
+
+.neo-entity-pill {
+  display: inline-block;
+  padding: 1px 7px;
+  margin: 0 2px;
+  border: 2px solid #000000;
+  box-shadow: 2px 2px 0px #000000;
+  font-weight: 700;
+}
+
+.neo-entity-tag {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  margin-left: 6px;
+  padding: 1px 6px;
+  border: 1.5px solid #000000;
+  text-transform: uppercase;
+  vertical-align: 2px;
+}
+
+.neo-export-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+  border-top: 2.5px solid #000000;
+  padding-top: 16px;
+}
+
+.neo-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #FFFFFF;
+  border: 2.5px solid #000000;
+  box-shadow: 3px 3px 0px #000000;
+  padding: 8px 16px;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* =========================================================================
+   9. AUDITED JUDICIAL SCOREBOARD (TAB 2)
+   ========================================================================= */
+.neo-trust-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+  margin-bottom: 32px;
+}
+
+.neo-trust-box {
+  background: #FFFFFF;
+  border: 3.5px solid #000000;
+  box-shadow: 6px 6px 0px #000000;
+  padding: 24px;
+}
+
+.neo-trust-val {
+  font-family: var(--font-display);
+  font-size: 2.75rem;
+  font-weight: 900;
+  line-height: 1;
+  color: #000000;
+  margin-bottom: 6px;
+}
+
+.neo-trust-title {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.neo-trust-desc {
+  font-size: 0.82rem;
+  color: #333333;
+  line-height: 1.4;
+}
+
+.neo-table-panel {
+  background: #FFFFFF;
+  border: 3.5px solid #000000;
+  box-shadow: 8px 8px 0px #000000;
+  overflow-x: auto;
+  margin-bottom: 32px;
+}
+
+.neo-table-top {
+  background: var(--color-yellow);
+  border-bottom: 3.5px solid #000000;
+  padding: 16px 22px;
+}
+
+.neo-table-head-text {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.neo-score-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.neo-score-table th {
+  background: #F4F4F5;
+  border-bottom: 3px solid #000000;
+  border-right: 2px solid #000000;
+  padding: 12px 16px;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.neo-score-table td {
+  border-bottom: 2px solid #000000;
+  border-right: 2px solid #000000;
+  padding: 12px 16px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.neo-score-table tr.winner-row {
+  background: #DCFCE7;
+}
+
+.neo-score-bar-bg {
+  background: #E4E4E7;
+  border: 1.5px solid #000000;
+  height: 10px;
+  margin-top: 4px;
+}
+
+.neo-score-bar-fill {
+  height: 100%;
+  background: var(--color-orange);
+}
+
+.winner-row .neo-score-bar-fill {
+  background: var(--color-lime);
+}
+
+/* =========================================================================
+   10. ARCHITECTURE DOSSIER (TAB 3)
+   ========================================================================= */
+.neo-arch-panel {
+  background: #FFFFFF;
+  border: 3.5px solid #000000;
+  box-shadow: 8px 8px 0px #000000;
+  padding: 34px;
+}

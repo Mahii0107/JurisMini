@@ -1,0 +1,86 @@
+:root {
+  --font-display: 'Space Grotesk', 'Syne', sans-serif;
+  --font-body: 'Public Sans', -apple-system, sans-serif;
+  --font-mono: 'Space Mono', monospace;
+
+  --bg-canvas: #FFF3CD;
+  --bg-card: #FFFFFF;
+  --bg-black: #000000;
+
+  --color-orange: #FF6B00;
+  --color-blue: #2563EB;
+  --color-cyan: #06B6D4;
+  --color-yellow: #FACC15;
+  --color-lime: #4ADE80;
+  --color-pink: #FF4B91;
+  --color-purple: #9333EA;
+
+  --border-thick: 3px solid #000000;
+  --border-medium: 2.5px solid #000000;
+  --border-thin: 2px solid #000000;
+
+  --shadow-hard-sm: 2px 2px 0px #000000;
+  --shadow-hard: 4px 4px 0px #000000;
+  --shadow-hard-lg: 6px 6px 0px #000000;
+  --shadow-hard-xl: 8px 8px 0px #000000;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-canvas);
+  background-image: radial-gradient(#000000 1.2px, transparent 1.2px);
+  background-size: 20px 20px;
+  color: #000000;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Neobrutalist Selection */
+::selection {
+  background: var(--color-yellow);
+  color: #000000;
+}
+
+button {
+  font-family: var(--font-display);
+  cursor: pointer;
+  border: var(--border-thick);
+  background: var(--bg-card);
+  box-shadow: var(--shadow-hard);
+  transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+button:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: var(--shadow-hard-lg);
+}
+
+button:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px #000000;
+}
+
+input, textarea, select {
+  font-family: inherit;
+  border: var(--border-thick);
+  box-shadow: var(--shadow-hard);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-yellow);
+  border: 2px solid #000000;
+}

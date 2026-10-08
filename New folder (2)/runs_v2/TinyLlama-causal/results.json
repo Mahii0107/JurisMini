@@ -1,0 +1,88 @@
+{
+  "model": "TinyLlama-causal",
+  "checkpoint": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "adapter_dir": "runs_v2\\TinyLlama-causal\\best",
+  "attention": "causal",
+  "train_minutes": 24.09541597366333,
+  "resumed_from": null,
+  "test_docs_per_sec": 42.18982790325733,
+  "peak_gpu_GB": 1.801821184,
+  "ceiling_f1": {
+    "off": 0.9797787956652888,
+    "on": 0.9865202942384527
+  },
+  "scores": {
+    "off": {
+      "precision": 0.5764073483371729,
+      "recall": 0.730115974560419,
+      "f1": 0.6442199775533108,
+      "macro_f1": 0.6283227726796843,
+      "overlap_f1": 0.8296032217600845,
+      "boundary_f1": 0.6646860764507824,
+      "per_label_f1": {
+        "CASE_NUMBER": 0.41927990708478513,
+        "COURT": 0.7253925698965913,
+        "DATE": 0.8747309513560052,
+        "GPE": 0.5627198124267292,
+        "JUDGE": 0.8115064345193035,
+        "LAWYER": 0.8917819365337674,
+        "ORG": 0.28657487091222034,
+        "OTHER_PERSON": 0.5298119247699079,
+        "PETITIONER": 0.5989847715736042,
+        "PRECEDENT": 0.27930174563591026,
+        "PROVISION": 0.7964188400155703,
+        "RESPONDENT": 0.6566929133858267,
+        "STATUTE": 0.7172413793103448,
+        "WITNESS": 0.6460807600950118
+      }
+    },
+    "on": {
+      "precision": 0.6478846873830026,
+      "recall": 0.7768799102132435,
+      "f1": 0.7065428192303768,
+      "macro_f1": 0.6893215893695677,
+      "overlap_f1": 0.8488993229219829,
+      "boundary_f1": 0.7378449185124698,
+      "per_label_f1": {
+        "CASE_NUMBER": 0.47500000000000003,
+        "COURT": 0.7839506172839505,
+        "DATE": 0.8930272845387613,
+        "GPE": 0.6792682926829269,
+        "JUDGE": 0.8449612403100775,
+        "LAWYER": 0.9156889495225102,
+        "ORG": 0.40778498609823904,
+        "OTHER_PERSON": 0.6649681528662421,
+        "PETITIONER": 0.6903023983315955,
+        "PRECEDENT": 0.32026143790849676,
+        "PROVISION": 0.8060985144644254,
+        "RESPONDENT": 0.7030549898167006,
+        "STATUTE": 0.7451162790697674,
+        "WITNESS": 0.7210191082802548
+      }
+    }
+  },
+  "val_log": [
+    {
+      "eval_loss": 0.1717921942472458,
+      "eval_precision": 0.5161740749360019,
+      "eval_recall": 0.7023432552248259,
+      "eval_f1": 0.5950368879946345,
+      "eval_runtime": 17.5948,
+      "eval_samples_per_second": 73.204,
+      "eval_steps_per_second": 4.604,
+      "epoch": 1.0,
+      "step": 811
+    },
+    {
+      "eval_loss": 0.14575043320655823,
+      "eval_precision": 0.5871017471736896,
+      "eval_recall": 0.7235592146928436,
+      "eval_f1": 0.64822695035461,
+      "eval_runtime": 17.4398,
+      "eval_samples_per_second": 73.854,
+      "eval_steps_per_second": 4.645,
+      "epoch": 2.0,
+      "step": 1622
+    }
+  ]
+}

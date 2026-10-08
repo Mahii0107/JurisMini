@@ -1,0 +1,54 @@
+{
+  "model": "Qwen2.5-1.5B",
+  "checkpoint": "Qwen/Qwen2.5-1.5B",
+  "precision": 0.5761325652514045,
+  "recall": 0.6061354283576506,
+  "f1": 0.5907532997885219,
+  "macro_f1": 0.5895962818970523,
+  "tokenizer_ceiling_f1": 0.882587827209293,
+  "train_minutes": 25.80948631366094,
+  "test_docs_per_sec": 43.11439085172306,
+  "trainable_params_M": 18.509341,
+  "peak_gpu_GB": 3.030925312,
+  "per_label_f1": {
+    "CASE_NUMBER": 0.4424460431654676,
+    "COURT": 0.7286274509803922,
+    "DATE": 0.8802395209580839,
+    "GPE": 0.6088560885608856,
+    "JUDGE": 0.6927272727272727,
+    "LAWYER": 0.41278610891870565,
+    "ORG": 0.3493761140819964,
+    "OTHER_PERSON": 0.5238658777120316,
+    "PETITIONER": 0.60984393757503,
+    "PRECEDENT": 0.31170212765957445,
+    "PROVISION": 0.799373040752351,
+    "RESPONDENT": 0.48501362397820164,
+    "STATUTE": 0.7529634898055949,
+    "WITNESS": 0.6565272496831431
+  },
+  "best_dir": "runs\\Qwen2.5-1.5B\\best",
+  "val_log": [
+    {
+      "eval_loss": 0.1602790802717209,
+      "eval_precision": 0.5027608253414705,
+      "eval_recall": 0.6728899260987943,
+      "eval_f1": 0.5755156353958749,
+      "eval_runtime": 17.0533,
+      "eval_samples_per_second": 65.149,
+      "eval_steps_per_second": 4.105,
+      "epoch": 1.0,
+      "step": 693
+    },
+    {
+      "eval_loss": 0.138868048787117,
+      "eval_precision": 0.6140690545337205,
+      "eval_recall": 0.7401789187086737,
+      "eval_f1": 0.6712522045855379,
+      "eval_runtime": 16.3987,
+      "eval_samples_per_second": 67.749,
+      "eval_steps_per_second": 4.269,
+      "epoch": 2.0,
+      "step": 1386
+    }
+  ]
+}

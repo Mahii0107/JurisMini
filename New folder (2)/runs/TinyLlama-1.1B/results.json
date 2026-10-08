@@ -1,0 +1,54 @@
+{
+  "model": "TinyLlama-1.1B",
+  "checkpoint": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "precision": 0.5752415743577657,
+  "recall": 0.7304900860456416,
+  "f1": 0.6436364835019942,
+  "macro_f1": 0.628523996722948,
+  "tokenizer_ceiling_f1": 0.9797787956652888,
+  "train_minutes": 25.181194925308226,
+  "test_docs_per_sec": 41.33640714821603,
+  "trainable_params_M": 12.675101,
+  "peak_gpu_GB": 1.801821184,
+  "per_label_f1": {
+    "CASE_NUMBER": 0.42456140350877186,
+    "COURT": 0.7160871226595339,
+    "DATE": 0.8812095032397408,
+    "GPE": 0.5704266510812391,
+    "JUDGE": 0.8066971080669711,
+    "LAWYER": 0.8894893272088624,
+    "ORG": 0.29064251832686505,
+    "OTHER_PERSON": 0.5193065405831363,
+    "PETITIONER": 0.5900497512437811,
+    "PRECEDENT": 0.27906976744186046,
+    "PROVISION": 0.8010941774130519,
+    "RESPONDENT": 0.6618933969769293,
+    "STATUTE": 0.716582452916858,
+    "WITNESS": 0.6522262334536703
+  },
+  "best_dir": "runs\\TinyLlama-1.1B\\best",
+  "val_log": [
+    {
+      "eval_loss": 0.1668754369020462,
+      "eval_precision": 0.5184407096171803,
+      "eval_recall": 0.7032932235592146,
+      "eval_f1": 0.5968825584520291,
+      "eval_runtime": 17.5614,
+      "eval_samples_per_second": 73.342,
+      "eval_steps_per_second": 4.612,
+      "epoch": 1.0,
+      "step": 811
+    },
+    {
+      "eval_loss": 0.147714763879776,
+      "eval_precision": 0.592611728235598,
+      "eval_recall": 0.7264091196960102,
+      "eval_f1": 0.6527244273723148,
+      "eval_runtime": 17.4915,
+      "eval_samples_per_second": 73.636,
+      "eval_steps_per_second": 4.631,
+      "epoch": 2.0,
+      "step": 1622
+    }
+  ]
+}
